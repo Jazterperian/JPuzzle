@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JPuzzle.MainPage"
+             BackgroundImageSource="FD1.jpg"
+             NavigationPage.HasNavigationBar="False">
+
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <ScrollView Grid.Row="1" Grid.RowSpan="4">
+            <StackLayout VerticalOptions="Center" Padding="40">
+                <Label Text="Photo Puzzle" FontSize="45" TextColor="#7E17F9"/>
+                <Label Text="A game app by Jazterperian" FontSize="15" TextColor="#2E075D"/>
+            </StackLayout>
+        </ScrollView>
+        <ScrollView Grid.Row="1" Grid.RowSpan="6">
+            <StackLayout VerticalOptions="Center" Padding="40">
+                <Button x:Name="BT1" Text="Pick a picture from your library" FontSize="15" CornerRadius="45" BackgroundColor="#E1EDEF" Clicked="BT1_Clicked"/>
+                <Label x:Name="LB1" Text="Contact us" HorizontalOptions="End" TextColor="Blue" TextDecorations="Underline"/>
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>
